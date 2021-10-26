@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script type="text/javascript" src="js/knockout-3.5.1.js"></script>
+    <title>Contabilescion</title>
+</head>
+
+<body>
+    <h1>CONTABILIESCION</h1>
+
+    <div class="col-5 p-3 border" style="background-color: aliceblue;">
+        <table>
+            <thead>
+                <tr>
+                    <th><label>Descrizione</label></th>
+                    <th><label>Costo</label></th>
+                    <th><label>Tipologia</label></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-bind="text: descrizione"></td>
+                    <td data-bind="text: costo"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>Descrizione: <input data-bind="value: descrizione" /></p>
+    <p>Costo: <input data-bind="value: costo" /></p>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
